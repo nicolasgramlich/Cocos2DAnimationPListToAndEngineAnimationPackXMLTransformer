@@ -75,7 +75,7 @@
 			<!--
 				Handle the loops property (defaulting to 1).
 			-->
-			<xsl:attribute name="loopCount">
+			<xsl:attribute name="loopcount">
 				<xsl:choose>
 					<xsl:when test="count(following-sibling::dict[1]/key[. = 'loops']/following-sibling::integer[1]) > 0">
 						<xsl:value-of select="following-sibling::dict[1]/key[. = 'loops']/following-sibling::integer[1]"/>
@@ -110,9 +110,9 @@
 		<xsl:variable name="delayUnits" select="key[. = 'delayUnits']/following-sibling::integer[1]"/>
 		<xsl:variable name="duration" select="round(1000 * number($delayPerUnit) * number($delayUnits))"/>
 
-		<xsl:variable name="textureRegion" select="key[. = 'spriteframe']/following-sibling::string[1]"/>
+		<xsl:variable name="textureregion" select="key[. = 'spriteframe']/following-sibling::string[1]"/>
 
-		<animationframe duration="{$duration}" textureRegion="{$textureRegion}"/>
+		<animationframe duration="{$duration}" textureRegion="{$textureregion}"/>
 	</xsl:template>
 
 	<!-- String Utility -->
