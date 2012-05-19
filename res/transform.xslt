@@ -112,7 +112,7 @@
 
 		<xsl:variable name="textureregion" select="key[. = 'spriteframe']/following-sibling::string[1]"/>
 
-		<animationframe duration="{$duration}" textureRegion="{$textureregion}"/>
+		<animationframe duration="{$duration}" textureregion="{$textureregion}"/>
 	</xsl:template>
 
 	<!-- String Utility -->
